@@ -5,6 +5,21 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'metropolitanomedium_italic';
+    src: url(fonts/metropolitano-mediumitalic-webfont.woff2) format('woff2'),
+         url(fonts/metropolitano-mediumitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kamillo_groteskregular';
+    src: url(fonts/kamillogrotesk-regular-webfont.woff2) format('woff2'),
+         url(fonts/kamillogrotesk-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body{
     display: flex;
@@ -40,6 +55,7 @@ body{
 }
 .right-side-2{
     height: 30%;
+    
 }
 .odin-place
 {
@@ -72,13 +88,13 @@ body{
     flex-direction: column;
     justify-content: end;
     gap:10%;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(223, 223, 223);
     padding-bottom: 5%;
     
 }
 .right-side-1 > div {
     margin-left: 10%;
-    font-family: "Lato", sans-serif;
+    font-family: metropolitanomedium_italic, sans-serif;
     
 }
 .right-side-1:nth-child(3)
@@ -94,13 +110,14 @@ body{
     margin-left: 7%;
     font-size: 1.5em;
     padding-top: 3%;
-    font-family: "Lato", sans-serif;
+    font-family: metropolitanomedium_italic, sans-serif;
     padding-bottom: 3%;
 }
 input{
     display: block;
     font-family: monospace, sans-serif;
     margin-bottom: 20px;
+    width: 150%;
 }
 
 .part-2{
@@ -114,6 +131,51 @@ input{
 .input
 {
     margin-bottom: 20px;
+    font-family: "kamillo_groteskregular", sans-serif;
+}
+.create-account
+{
+    
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: rgb(30, 105, 0);
+    font-size: 1.4em;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    user-select: none;
 }
 
+.create-account:hover{
+    cursor:pointer;
+    scale: 100.5%;
+
+}
+
+.bottom{
+    display: flex;
+    gap: 1%;
+    margin-left: 5%;
+}
+.already-have
+{
+    font-weight: 600;
+}
+    
+
+label{
+    font-family: "kamillo_groteskregular", sans-serif;
+}
+
+.right-side-3{
+    font-family: "kamillo_groteskregular", sans-serif;
+}
+.log-in
+{
+    color: rgb(30, 105, 0);
+    font-weight: 600;
+    text-decoration: none;
+}
 
