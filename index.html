@@ -52,7 +52,7 @@
                         <input type="tel" id="phone-number" name="phone-number" class="input" required>
     
                         <label for="repeat-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="repeat-password" id="real" class="input" required/>
+                        <input type="password" name="repeat-password" id="repeat-password" class="input" required/>
                     </div>
     
                 </div>
@@ -69,6 +69,20 @@
                 <a href="" class="log-in">Login</a>
             </div>
         </div>
-    </div>   
+    </div>
+    <script>
+        var password = document.getElementById("password");
+        var confirm_password = document.getElementById("repeat-password");
+
+        function validatePassword(){
+            if(password.value != confirm_password.value){
+                confirm_password.setCustomValidity("Passwords don't match");
+            }else{
+                confirm_password.setCustomValidity("");
+            }
+        }
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>   
 </body>
 </html>
