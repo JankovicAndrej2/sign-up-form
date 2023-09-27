@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url(fonts/norse-bold-webfont.woff2) format('woff2'),
+         url(fonts/norse-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     display: flex;
     
@@ -29,7 +37,6 @@ body{
 
 .right-side > div{
     flex:1;
-    background-color: red;
 }
 .right-side-2{
     height: 30%;
@@ -52,8 +59,61 @@ body{
     height: 90%;
 }
 .odin-text{
-    font-size: 300%;
-    opacity: 0%;
+    font-size: 6em;
+    opacity: 100%;
+    color: white;
+    font-family: "norsebold", sans-serif;
+}
+.right-side-1
+{
+    display: flex;
+    font-size: 1.4em;
+    
+    flex-direction: column;
+    justify-content: end;
+    gap:10%;
+    background-color: rgb(196, 196, 196);
+    padding-bottom: 5%;
+    
+}
+.right-side-1 > div {
+    margin-left: 10%;
+    font-family: "Lato", sans-serif;
+    
+}
+.right-side-1:nth-child(3)
+{
+    padding-bottom: 5%;
+}
+
+.right-side-2{
+    display: flex;
+    flex-direction: column;
+}
+.part-1{
+    margin-left: 7%;
+    font-size: 1.5em;
+    padding-top: 3%;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 3%;
+}
+input{
+    display: block;
+    font-family: monospace, sans-serif;
+    margin-bottom: 20px;
+}
+
+.part-2{
+    display: flex;
+    justify-content: start;
+    gap: 30%;
+}
+.first-part-of-sign-up{
+    padding-left: 5%;
+}
+.input
+{
+    margin-bottom: 20px;
 }
 
 
