@@ -31,33 +31,35 @@
             <div class="part-1">
                 Let's do this!
             </div>
-            
-            <div class="part-2">
-                <div class="first-part-of-sign-up">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" class="input">
-                    
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" class="input">
+            <form action="" id="form-form">
 
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" class="input">
+                <div class="part-2">
+                    <div class="first-part-of-sign-up">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" class="input" required>
+                        
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" class="input" required>
+    
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="input" required>
+                    </div>
+                    <div class="second-part-of-sign-up">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" class="input" required>
+    
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" class="input" required>
+    
+                        <label for="repeat-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="repeat-password" id="real" class="input" required/>
+                    </div>
+    
                 </div>
-                <div class="second-part-of-sign-up">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" class="input">
-
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number" class="input">
-
-                    <label for="repeat-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="repeat-password" id="real" class="input"/>
-                </div>
-
-            </div>
+            </form>
         </div>
         <div class="right-side-3">
-            <button type="submit" class="create-account">
+            <button type="submit" class="create-account" form="form-form">
                 CREATE ACCOUNT
             </button>
             <div class="bottom">
